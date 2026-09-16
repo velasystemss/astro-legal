@@ -1,14 +1,16 @@
+---
+---
 <!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Astro — Yasal belgeler</title>
+<title>{{ site.app_name }} — Yasal belgeler</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<h1>Astro</h1>
+<h1>{{ site.app_name }}</h1>
 <p class="meta">Gizlilik Politikası ve Kullanım Koşulları · Privacy Policy and Terms of Use</p>
 
 <ul class="docs">
@@ -26,7 +28,7 @@
 </ul>
 
 <footer>
-<p><a href="mailto:velalabss@gmail.com">velalabss@gmail.com</a></p>
+<p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
 </footer>
 </main>
 </body>

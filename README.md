@@ -12,19 +12,17 @@ URLs. It holds nothing else: no app code, no keys, no user data.
 | Kullanım Koşulları | `/terms-tr.html` |
 | Terms of Use | `/terms-en.html` |
 
-## Before publishing, fill in the placeholders
+## Changing the name, the contact or who is responsible
 
-Each appears as `[... — DOLDURULACAK]` / `[... — TO BE COMPLETED]`:
-
-- the legal entity's name and address (all four pages);
-- the governing law and courts (both Terms pages).
+`_config.yml` holds them once, and every page reads from it. Renaming the app is one line there,
+not five files. GitHub Pages rebuilds on push.
 
 ## Keeping this true
 
-The privacy policy describes how the app actually behaves today: everything on the device, no
-account, no server copy, no analytics, no third-party SDKs, and only Apple Maps place search
-leaving the phone. **If the app changes so that any of that stops being true, these pages change in
-the same commit as the app.**
+These pages describe how the app actually behaves today: everything on the device, no account, no
+server copy, no analytics, no third-party SDKs; the only thing leaving the phone is place search —
+the text typed and the chosen place's coordinates, both to Apple Maps. **If the app changes so that
+any of that stops being true, these pages change in the same commit as the app.**
 
 The app enforces the same rule from its side: `PrivacyPromise` in the app repository decides which
 sentence the Sen tab shows, and its test fails when the flag and the sentence disagree.

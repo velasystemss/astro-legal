@@ -1,9 +1,11 @@
+---
+---
 <!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Astro — Kullanım Koşulları</title>
+<title>{{ site.app_name }} — Kullanım Koşulları</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,11 +13,11 @@
 <p class="switch"><a href="terms-en.html">English</a> · <a href="index.html">Tüm belgeler</a></p>
 
 <h1>Kullanım Koşulları</h1>
-<p class="meta">Astro uygulaması · Son güncelleme: 16 Eylül 2026</p>
+<p class="meta">{{ site.app_name }} uygulaması · Son güncelleme: 16 Eylül 2026</p>
 
 <div class="callout">
 <h2 class="callout-title">Bu uygulama tavsiye vermez</h2>
-<p>Astro bir eğlence ve gündelik iyi hissetme uygulamasıdır. İçeriği gökyüzünün o günkü
+<p>{{ site.app_name }}, bir eğlence ve gündelik iyi hissetme uygulamasıdır. İçeriği gökyüzünün o günkü
 konumlarından üretilen yorumlardır; bir öngörü, bir teşhis ya da bir tavsiye değildir.</p>
 <p><strong>Özellikle: tıbbi, psikolojik, finansal veya hukuki tavsiye değildir.</strong> Sağlığın,
 paran, hukuki durumun veya ilişkilerinle ilgili kararları buradaki satırlara dayanarak alma; bu
@@ -82,11 +84,12 @@ istediğin zaman bırakabilirsin: silmen yeterli. Koşulları ağır biçimde ih
 uygulamayı kullanmanı sona erdirebiliriz.</p>
 
 <h2>Uygulanacak hukuk</h2>
-<p>[UYGULANACAK HUKUK VE YETKİLİ MAHKEME — DOLDURULACAK]</p>
+<p>Bu koşullara Türkiye Cumhuriyeti hukuku uygulanır. Uyuşmazlıklarda Ankara Mahkemeleri ve
+İcra Daireleri yetkilidir.</p>
 
 <h2>İletişim</h2>
-<p>[ŞİRKET VEYA KİŞİ ADI — DOLDURULACAK], [ADRES — DOLDURULACAK] ·
-<a href="mailto:velalabss@gmail.com">velalabss@gmail.com</a></p>
+<p>{{ site.provider_name }} (gerçek kişi), {{ site.provider_place_tr }} ·
+<a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
 </main>
 </body>
 </html>

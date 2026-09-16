@@ -1,9 +1,11 @@
+---
+---
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Astro — Privacy Policy</title>
+<title>{{ site.app_name }} — Privacy Policy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,15 +13,16 @@
 <p class="switch"><a href="privacy-tr.html">Türkçe</a> · <a href="index.html">All documents</a></p>
 
 <h1>Privacy Policy</h1>
-<p class="meta">Astro app · Last updated: 16 September 2026</p>
+<p class="meta">{{ site.app_name }} app · Last updated: 16 September 2026</p>
 
 <p class="lead">In short: your birth details stay on your phone. There is no account, no copy on
 our servers, and no analytics or advertising tracking. The only thing that leaves your phone is
-the text you type when searching for your birth place, which goes to Apple Maps.</p>
+place search: the text you type, and the coordinates of the place you pick, go to Apple Maps to
+find the place and its time zone.</p>
 
 <h2>Who is responsible</h2>
-<p>[COMPANY OR INDIVIDUAL NAME — TO BE COMPLETED], [ADDRESS — TO BE COMPLETED].
-Contact: <a href="mailto:velalabss@gmail.com">velalabss@gmail.com</a></p>
+<p>{{ site.provider_name }}, an individual, {{ site.provider_place_en }}.
+Contact: <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
 
 <h2>What we collect</h2>
 <p>Only what you type into the app yourself:</p>
@@ -75,10 +78,11 @@ The app returns to the state it was in when first installed.</p>
 <p>There is nothing to request from us, because we hold nothing. There is no account to delete.</p>
 
 <h2>Your rights</h2>
-<p>You exercise your rights of access, correction and deletion directly in the app: every piece of
-information is visible and editable in the Sen tab, and deletion takes one tap. Because we hold no
-data, there is no access or deletion request you could make to us. If that ever changes, this
-document changes at the same time.</p>
+<p>Because the person responsible is in Türkiye, Türkiye's Personal Data Protection Law (KVKK, Law
+No. 6698) applies. You exercise your rights of access, correction and deletion directly in the app:
+every piece of information is visible and editable in the Sen tab, and deletion takes one tap.
+There is no access or deletion request to address to us, because we hold no personal data. If that
+ever changes, this document changes at the same time.</p>
 
 <h2>Children</h2>
 <p>The app is not directed at children, and we do not knowingly collect data from children.</p>
@@ -88,7 +92,8 @@ document changes at the same time.</p>
 leaving the phone, we will say so here plainly.</p>
 
 <h2>Contact</h2>
-<p><a href="mailto:velalabss@gmail.com">velalabss@gmail.com</a></p>
+<p>{{ site.provider_name }}, {{ site.provider_place_en }} ·
+<a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a></p>
 </main>
 </body>
 </html>
